@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  html,
+  body {
+    line-height: 1;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  body {
+    background-color: #f5f5dc;
+  }
+  #root {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("gym.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  #root::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+  }
+  .main-header > * {
+    position: relative;
+  }
+  .main-header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .main-nav {
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-logo {
+    font-size: 1.5rem;
+    font-style: oblique;
+  }
+  .main-logo {
+    color: #0c84ac;
+    font-weight: 700;
+    filter: brightness(150%);
+  }
+  .main-logo span {
+    font-size: 1rem;
+    color: #fff;
+  }
+  .main span{
+    color: #68cef0;
+  }
+  /* links */
+  .links-harmburger {
+    display: flex;
+  }
+  .nav-links {
+    display: flex;
+    list-style-type: none;
+  }
+  .nav-link {
+    padding-right: 1.2rem;
+  }
+  .link {
+    font-size: 1.1rem;
+    color: #fff;
+    transition: 0.5s ease;
+  }
+  .link:hover {
+    color: #0c84ac;
+  }
+  
+  /* section */
+  .header-section {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    line-height: 1.3;
+    padding-top: 4rem;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .header-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+  }
+  .header-section p {
+    font-size: 1.1rem;
+    margin: 0 0 4rem 0;
+  }
+  
+  .header-btn .btn {
+    display: block;
+    width: 300px;
+    background-color: #0c84ac;
+    color: #fff;
+    border: 0;
+    border-radius: 0.3rem;
+    outline: 0;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  /* small screen line */
+  .nav-sm {
+    width: 30px;
+    height: 30px;
+    z-index: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .line {
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+  
+  /* small devices menu */
+  .menu {
+    position: fixed;
+    background-color: #000;
+    opacity: 0.9;
+    color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+    transition: all 2s;
+    display: none;
+  }
+  
+  .menu-links {
+    list-style-type: none;
+    text-align: center;
+  }
+  .menu-link {
+    margin: 40px 0;
+  }
+  .close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-weight: 500;
+    font-size: 3rem;
+  }
+  /* toggle class */
+  .display {
+    display: block;
+  }
+  /* media queries */
+  @media (max-width: 768px) {
+    .main-header {
+      padding: 0 20px;
+    }
+    .main-nav {
+      height: 10vh;
+    }
+    .nav-links {
+      display: none;
+    }
+    .header-section h1 {
+      font-size: 1.8rem;
+    }
+  }
+  .btnn{
+    width: 240px;
+    height: 40px;
+    background: #30c9fc;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: #081012;
+}
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #43efff;
+}
+  
+  @media (min-width: 768px) {
+    .nav-sm {
+      display: none;
+    }
+  }
